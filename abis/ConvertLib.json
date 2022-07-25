@@ -23,7 +23,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"conversionRate\",\"type\":\"uint256\"}],\"name\":\"convert\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"convertedAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ConvertLib.sol\":\"ConvertLib\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ConvertLib.sol\":{\"keccak256\":\"0xc83c96481d0ad02c4f39e042cd976035774fce49607a5c9b80a33d42f578369d\",\"urls\":[\"bzz-raw://ea86ea4ca58e92a7c492e994294a39073090e812e8552d6261470e86568da94d\",\"dweb:/ipfs/QmVhEFWeWaqPh6kh1GiyPaGWEGMjqLJLuEAUAmmor7xpd3\"]}},\"version\":1}",
@@ -594,7 +595,7 @@
   "sourceMap": "25:155:0:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;25:155:0;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "25:155:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;46:132;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;117:20;151:23;160:14;151:6;:23;:::i;:::-;144:30;46:132;-1:-1:-1;;;46:132:0:o;14:258:4:-;;;143:2;131:9;122:7;118:23;114:32;111:2;;;164:6;156;149:22;111:2;-1:-1:-1;;192:23:4;;;262:2;247:18;;;234:32;;-1:-1:-1;101:171:4:o;277:185::-;431:25;;;419:2;404:18;;386:76::o;467:277::-;;573:1;569;565:6;561:14;558:1;555:21;550:1;543:9;536:17;532:45;529:2;;;-1:-1:-1;;;600:37:4;;660:4;657:1;650:15;694:4;607:7;678:21;529:2;-1:-1:-1;729:9:4;;519:225::o",
   "source": "pragma solidity ^0.8.1;\n\nlibrary ConvertLib{\n\tfunction convert(uint amount,uint conversionRate) public pure returns (uint convertedAmount)\n\t{\n\t\treturn amount * conversionRate;\n\t}\n}\n",
-  "sourcePath": "/Users/jacekstaszynski/Workspace/private/my-app/contracts/ConvertLib.sol",
+  "sourcePath": "/Users/jacekstaszynski/Workspace/private/truffle-react-template/contracts/ConvertLib.sol",
   "ast": {
     "absolutePath": "project:/contracts/ConvertLib.sol",
     "exportedSymbols": {
@@ -801,9 +802,17 @@
     "name": "solc",
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x6890026Cb5507A3c3e475584F37B455c110e69c4",
+      "transactionHash": "0x523cf0b1d785188474e9b09aedb842e1d261cacf882e4b0fa37841fb46d4905d"
+    }
+  },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-13T05:31:08.391Z",
+  "updatedAt": "2022-07-25T05:47:16.393Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
